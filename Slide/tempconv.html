@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Conversion</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Temperature Conversion">
+  <meta name="author" content="pbask">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Temperature Conversion</h1>
+    <h2>Celsius/Fahrenheit/Kelvin</h2>
+    <p>pbask<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is an RStudio shiny application developed as a course project for Coursera&#39;s <b>Developing Data Products</b> course in the <b>Data Science Specialization</b> track. The application developed is a temperature conversion tool between different units (Celsius/Fahrenheit/Kelvin).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application uses </p>
+
+<ol>
+<li><p>Radio Buttons to choose from the various conversion types.</p></li>
+<li><p>A text box with numeric value for the temperature value to be entered by the user for conversion.</p></li>
+</ol>
+
+<p>The Documentation for the app is already included in the application&#39;s Documentation Tab</p>
+
+<p>Example Calculation </p>
+
+<pre><code class="r">#given an temprature input of 0 Cesius below would be the conversion to Kelvin
+0 + 273.15
+</code></pre>
+
+<pre><code>## [1] 273.15
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Formulae</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The forumlae used in the application are </p>
+
+<ol>
+<li><p>Celsius to Fahrenheit
+F = (C * 9/5) + 32 where C is the input temperature in Celsius and F is the converted temperature in Fahrenheit</p></li>
+<li><p>Fahrenheit to Celsius
+C = (F -32) * 5/9 where F is the input temperature in Fahrenheit and C is the converted temperature in Celsius</p></li>
+<li><p>Kelvin to Celsius &amp; Celsius to Kelvin
+Its a direct conversion where K = 273.15 + C where C is the input temperature in Celsius and K is the converted temperature in Kelvin. Viceversa, the formula C = K - 273.15 is used. </p></li>
+<li><p>Convert Kelvin to Fahrenheit
+F = (K * 9)/5 - 459.67 where K is the input temperature in Kelvin and F is the converted temperature in Fahrenheit</p></li>
+<li><p>Convert Fahrenheit to Kelvin
+K = (F + 459.67) * 5 / 9 where F is the input temperature in Fahrenheit and K is the converted temperature in Kelvin</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Accesing the application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The application link on RStudio shinyapps.io is </p>
+
+<p><a href="http://pbask.shinyapps.io/TempConv/"> <b><a href="https://pbask.shinyapps.io/TempConv/">https://pbask.shinyapps.io/TempConv/</a></b></a></p>
+
+<p>The code for the following is hosted in gthub with the below URL</p>
+
+<p><a href="http://github.com/pbask/DataProductsProject"><b><a href="http://github.com/pbask/DataProductsProject">http://github.com/pbask/DataProductsProject</a></b></a></p>
+
+<p>To run it from Rstudio or R, download the ui.R and server.R into the working directory of R or RStudio and execute runApp() in the console.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Formulae'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Accesing the application'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
